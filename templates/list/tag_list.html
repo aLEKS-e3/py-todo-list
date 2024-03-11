@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <h1>
+        Tags
+        <a class="btn btn-outline-dark" href="{% url 'list:tag-create' %}">+</a>
+    </h1>
     {% if tag_list %}
         {% for tag in tag_list %}
             {{ tag.name }}
