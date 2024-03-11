@@ -10,8 +10,10 @@
         {% for task in task_list %}
             <h4>
                 {{ task.content }}
+                <a class="btn btn-outline-light" href="{% url 'list:task-update' pk=task.id %}">✏️</a>
+                <a class="btn btn-outline-danger" href="{% url 'list:task-delete' pk=task.id %}">🗑</a>
                 {% if task.is_done %}
-                    <a class="btn btn-outline-danger" href="{% url 'list:task-done' pk=task.id %}">Undo</a>
+                    <a class="btn btn-outline-info" href="{% url 'list:task-done' pk=task.id %}">Undo</a>
                 {% else %}
                     <a class="btn btn-outline-success" href="{% url 'list:task-done' pk=task.id %}">Complete</a>
                 {% endif %}
