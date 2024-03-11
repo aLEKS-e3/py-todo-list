@@ -6,6 +6,6 @@ admin.site.register(Tag)
 
 
 @admin.register(Task)
-class DriverAdmin(admin.ModelAdmin):
+class TaskAdmin(admin.ModelAdmin):
     search_fields = ("content",)
     list_filter = ("tags",)
