@@ -9,7 +9,7 @@ class Tag(models.Model):
 
 
 class Task(models.Model):
-    content = models.TextField()
+    content = models.CharField(max_length=255)
     date = models.DateTimeField(auto_now_add=True)
     deadline = models.DateField(null=True, blank=True)
     is_done = models.BooleanField(default=False)
@@ -19,4 +19,4 @@ class Task(models.Model):
         ordering = ["-date", "is_done"]
 
     def __str__(self):
-        return f"{self.content[:10]}... - {self.date}"
+        return self.content
