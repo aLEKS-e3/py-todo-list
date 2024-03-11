@@ -4,10 +4,10 @@ This is a simple Python3 project to help you manage tasks throughout a day or we
 
 ## What can it help with?
 
-**Create Tasks**: Easily add tasks with optional deadline!
-**Update Tasks**: Something changed? No problem, just update your task!
-**Complete Tasks**: Mark already done tasks as complete (You can even undo them!)
-**Delete Tasks**: Delete all finished tasks in the end of the day!
+- **Create Tasks**: Easily add tasks with optional deadline!
+- **Update Tasks**: Something changed? No problem, just update your task!
+- **Complete Tasks**: Mark already done tasks as complete (You can even undo them!)
+- **Delete Tasks**: Delete all finished tasks in the end of the day!
 
 ## How to use?
 
