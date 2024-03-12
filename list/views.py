@@ -43,7 +43,6 @@ class TaskCreateView(generic.CreateView):
 class TaskUpdateView(generic.UpdateView):
     model = Task
     form_class = TaskForm
-    template_name = "list/task_form.html"
     success_url = reverse_lazy("list:task-list")
 
 
